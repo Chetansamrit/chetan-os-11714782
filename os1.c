@@ -11,5 +11,19 @@ scanf("%d", &limit);
 
 x=limit;
 
+for(i = 0; i < limit; i++) 
+      {
+	    p[i]=i+1;
+	   
+	    prio[i]=0;
+            printf("\nEnter total Details of Process[%d]\n", i + 1);
+            printf("Arrival Time:\t");
+            scanf("%d", &at[i]);
+            printf("Burst Time:\t");
+            scanf("%d", &bt[i]); 
+            temp[i] = bt[i];
+      }
+
+
 
 }
