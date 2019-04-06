@@ -23,7 +23,41 @@ for(i = 0; i < limit; i++)
             scanf("%d", &bt[i]); 
             temp[i] = bt[i];
       }
+ for(total = 0, i = 0; x != 0;) 
+      { 
 
+		    for(z=0;z<limit;z++)
+		    {
+			int temp1;
+			pos=z;
+			for(j=z+1;j<limit;j++)
+			{
+			    if(prio[j]<prio[pos])
+				pos=j;
+			}
+		 
+		temp1=prio[z];
+	
+		prio[z]=prio[pos];
+	
+		prio[pos]=temp1;
+		 
+			temp1=b_time[z];
+			b_time[z]=b_time[pos];
+			b_time[pos]=temp1;
+		 			temp1=a_time[z];
+				a_time[z]=a_time[pos];
+			a_time[pos]=temp1;
+
+			temp1=p[z];
+				p[z]=p[pos];
+			p[pos]=temp1;
+
+			temp1=temp[z];
+				temp[z]=temp[pos];
+			temp[pos]=temp1;
+		    }
+return 0; 
 
 
 }
