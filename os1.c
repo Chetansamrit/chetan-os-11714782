@@ -1,5 +1,5 @@
 #include<stdio.h> 
- //final
+ 
 int main() 
 { 
       int i, limit, total = 0, x, count = 0, tq,j; 
@@ -13,7 +13,7 @@ int main()
 	  scanf("%d", &limit); 
       
 	  x = limit; 
---------------------
+	  
       for(i = 0; i < limit; i++) 
       {
 	    p[i]=i+1;
